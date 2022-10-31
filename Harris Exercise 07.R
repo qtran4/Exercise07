@@ -6,17 +6,17 @@ setwd("/users/sydneyharris/desktop")
 #read iris.csv file in R
 iris.csv <- read.csv("/users/sydneyharris/desktop/iris.csv", header = T)
 
-#create file called iris_table.txt that is a tab delimited version of iris.csv, which is comma delimited
+#create file called iris.txt that is a tab delimited version of iris.csv, which is comma delimited
 #file is created in the current working directory
-write.table(iris.csv, "iris_table.txt", row.names = F, sep = "\t")
+write.table(iris.csv, "iris.txt", row.names = F, sep = "\t")
 
 #QUESTION 2
 #1. create a vector of length 10 from 100 t0 1000 by 100s
 vect <- seq(from=100, to=1000, by=100)
 vect
 #2. 2x2 data frame with scores from last week's Notre Dame game
-names <- c("Notre Dame", "UNLV")
-scores <- c(44, 21)
+names <- c("Notre Dame", "Syracuse")
+scores <- c(41, 24)
 dat <- data.frame(names, scores, stringsAsFactors = F)
 dat
 #3. the number 999
