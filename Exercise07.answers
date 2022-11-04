@@ -1,0 +1,25 @@
+#QUESTION 1
+#setting to correct directory
+getwd()
+setwd("C:/Users/ortre/Exercise07")
+#creating a file
+file.create("iris.txt")
+#creating data from CSV file
+irisdata <- read.csv("iris.csv", header = TRUE)
+#producing iris.txt with data
+write.table(irisdata, file="iris.txt",row.names=FALSE,col.names=TRUE,sep="\t",append=FALSE)
+
+#QUESTION 2
+#creating vector with multiple of 100 to 1000
+mult<-seq(from=100,to=1000,length.out=10)
+#ND v Syracuse
+game<-data.frame(Team=c("Notre Dame","Syracuse"), score=c(41,24))
+#One from a thousand
+vecx<-999
+#creating a matrix
+mat3<-matrix(data=1:50,nrow=10,ncol=5,byrow=TRUE)
+#Three Letters
+letters<-c("R","E","Y")
+
+#final list
+list<-list(mult, game, vecx, mat3, letters)
