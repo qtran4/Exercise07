@@ -16,8 +16,9 @@ a <- c(100,200,300,400,500,600,700,800,900,1000)
 a <- seq(from=100,to=1000,by=100)
 a #a vector with length 10 containing 100, 200, . . . , 1000
 
-b <- matrix(data = c("Standford","ND",24,40), nrow = 2,ncol = 2, byrow=F)
-  #a two-row, two-column data frame with the team names and final score 
+b <- matrix(data = c("Standford","NotreDame",24,40), nrow = 2,ncol = 2, byrow=F)
+data.frame(b)
+#b two-row, two-column data frame with the team names and final score 
 #from last week’s Notre Dame football game
 
 c <- 999 
